@@ -1,12 +1,4 @@
-(executable
- (name main)
- (public_name main)
- (libraries logs json-logs-reporter)
- (preprocess (pps ppx_here))
- (modules main))
-
 (library
  (name json_logs_reporter)
  (public_name json-logs-reporter)
- (libraries logs fmt ptime ptime.clock.os yojson)
- (modules json_logs_reporter))
+ (libraries logs fmt ptime ptime.clock.os yojson))

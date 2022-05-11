@@ -15,6 +15,7 @@ depends: [
   "fmt"
   "ptime"
   "yojson"
+  "ppx_here" {dev & >= "0.14.0"}
   "odoc" {with-doc}
 ]
 build: [

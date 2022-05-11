@@ -17,4 +17,5 @@
   logs
   fmt
   ptime
-  yojson))
+  yojson
+  (ppx_here (and :dev (>= 0.14.0)))))
