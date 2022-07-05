@@ -22,7 +22,7 @@ let add_basic_fields (fields : Json.t String_map.t) level src message =
   in
   let replace key value map =
     String_map.remove key map |> String_map.add key value in
-  add_if_new "time"
+  add_if_new "log.time"
     (fun () -> `String (Ptime.to_rfc3339 @@ Ptime_clock.now ()))
     fields
   |> add_if_new "log.level" (fun () ->
